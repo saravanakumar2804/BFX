@@ -1,0 +1,24 @@
+
+
+.FUN{
+
+    color: blueviolet;
+    font-style: italic;
+    font-stretch:ultra-expanded;
+    font-size: 100%;
+    background-color: rgb(197, 236, 236);
+    border: solid 1px red;
+    width: 50%;
+}
+    #tt{
+        background-color: blueviolet;
+    }
+
+.play{
+    display: flex;
+}
+#fg
+{color:red;}
+.hh{
+    background-color: burlywood;
+}

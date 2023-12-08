@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>second Project</title>
+    <style>
+        .top {
+            height: 30px;
+            background-color: rgb(56, 138, 153);
+            color: rgb(243, 247, 222);
+        }
+
+        .top>p {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 15px;
+        }
+
+        .form1 {
+            width: 600px;
+            height: 600px;
+            border: 2px solid black;
+            background-color: white;
+
+        }
+
+        .formtop {
+            width: 500px;
+            height: 40px;
+            margin: 50px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(209, 239, 246);
+            text-align: center;
+            border-radius: 5px;
+
+        }
+
+        .lab {
+            margin-top: 5px;
+            margin-left: 5px;
+            border-radius: 5px;
+            padding: 5px;
+            width: 250px;
+            height: 20px;
+        }
+
+        .lab:hover {
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .lab1 {
+            margin-top: 5px;
+            margin-right: 5px;
+            border-radius: 5px;
+            padding: 5px;
+            width: 250px;
+            height: 20px;
+        }
+
+        .lab1:hover {
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .leftside {
+            width: 250px;
+            height: 300px;
+            margin: 50px;
+            margin-top: 10px;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .name {
+            width: 250px;
+            height: 80px;
+
+        }
+
+        .name>input {
+            width: 225px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid rgb(198, 197, 197);
+        }
+        .namelabel{
+            width: 235px;
+            padding: 5px;
+            border-radius: 5px;
+           border-color: rgb(198, 197, 197);
+        }
+       .content{
+        display: flex;
+        flex-direction: row;
+       }
+       .rightside {
+            width: 250px;
+            height: 300px;
+           margin-left: 10px;
+            margin-top: 10px;
+           margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+       .email {
+            width: 250px;
+            height: 80px;
+
+        }
+
+        .email>input {
+            width: 225px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid rgb(198, 197, 197);
+        }
+        .email>label {
+            width: 225px;
+            padding: 5px;
+        }
+        .details{
+            width: 500px;
+            margin-left: 50px;
+        
+
+        }
+        .details>input{
+            
+            width: 490px;
+            height: 100px;
+            border-radius: 5px;
+            border: 1px solid rgb(198, 197, 197);
+            text-overflow: clip;.
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <p>10% shipping cost off over $1000 from courier logistic company </p>
+    </div>
+    <div>
+        <form class="form1" action="#">
+            <div class="formtop">
+                <label class="lab" for="#">Request a Quote</label>
+                <label class="lab1" for="#">Track your Product</label>
+            </div>
+            <div class="content">
+                <div class="leftside">
+                    <div class="name">
+                        <p><b>Name</b><img src="" alt="#"></p>
+                        <input type="text" placeholder="Type your name" required>
+                    </div>
+                    <div class="name">
+                        <p><b>Company</b><img src="" alt="#"></p>
+                        <input type="text" placeholder="Type your company" required>
+                    </div>
+                    <div class="name">
+                        <p><b>Orgin Zip</b><img src="" alt="#"></p>
+                        <input type="text" placeholder="Type your Zip" required>
+                    </div>
+                    <div class="name">
+                        <p><b>Type of Frieght</b><img src="" alt="#"></p>
+                        <select class="namelabel" name="#"  >     
+                            <option value="Please Select a value">Please Select a value</option>
+                            <option value="Air Cargo">Air Cargo</option>
+                            <option value="Ship Cargo">Ship Cargo</option>
+                            <option value="Truckload Shipping">Truckload Shipping</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rightside">
+                    <div class="email">
+                        <p><b>Email</b><img src="" alt="#"></p>
+
+                        <input type="text" placeholder="Type your email" required>
+                    </div>
+                    <div class="email">
+                        <p><b>Phome</b><img src="" alt="#"></p>
+
+                        <input type="text" placeholder="Type your Phone No." required>
+                    </div>
+                    <div class="email">
+                        <p><b>Destination Zip</b><img src="" alt="#"></p>
+
+                        <input type="text" placeholder="Type your Zip" required>
+                    </div>
+                    <div class="email">
+                        <p><b>Accessorial Services</b><img src="" alt="#"></p>
+                        <select class="namelabel" name="#"  >     
+                            <option value="Please Select a value">Please Select a value</option>
+                            <option value="Air Cargo">Air Cargo</option>
+                            <option value="Ship Cargo">Ship Cargo</option>
+                            <option value="Truckload Shipping">Truckload Shipping</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <p><b>Cargo Details</b><img src="" alt="#"></p>
+                <input type="text" placeholder="Type your Cargo details..." >
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

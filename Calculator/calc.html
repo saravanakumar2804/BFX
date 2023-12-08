@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+
+    <style>
+        body{
+            text-align: -webkit-center; 
+            background-color:#ecf0f3;
+        }
+        .outcalc {
+            display: block;
+            width: 270px;
+            height: 435px;
+            background-color: #ecf0f3;
+            border: 1px solid black;
+            border-radius: 30px;
+
+            box-shadow: inset 5px 5px 12px #d4d4d5,
+                5px 5px 12px white;
+            background-image: url(calculator-online.jpg);
+        }
+
+        input {
+            width: 230px;
+            height: 100px;
+            text-align: right;
+            font-size: 20px;
+            padding: 8px;
+            color:black;
+            background-color: #ecf0f3;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            margin: 13px;
+            margin-bottom: 5px;
+            box-shadow: inset 5px 5px 12px #d2d1d1,
+                5px 5px 12px white;
+            background-image:linear-gradient(
+                              rgba(254, 253, 253, 0.4),
+                                 rgba(254, 251, 251, 0.4)),
+                                  url(1000_F_210137615_b8ciZP1npiquYWdem7zy2KBNcsXLHbgj.jpg);
+                background-size: 190px;
+        }
+        .allbutton {
+            display: flex;
+            flex-direction: row;
+            width: 270px;
+        }
+
+        .buttonc1 {
+            display: flex;
+            flex-direction: column;
+            padding: 7px;
+        }
+
+        button {
+            font-size: 15px;
+            width: 45px;
+            padding: 14px;
+            border-radius: 30px;
+            background-color: white;
+            border: none;
+            margin: 5px;
+            margin-top: 7px;
+            box-shadow: 0 0 10px #a5a5a5;
+            color: blue;
+            outline: none;
+        }
+
+        button:active {
+            transform: scale(0.99);
+            color: red;
+        }
+
+        .buttonc2 {
+            display: flex;
+            flex-direction: column;
+            padding: 7px;
+        }
+
+         .rightside {
+            display: flex;
+
+        } 
+
+        .buttonc3 {
+            display: flex;
+            flex-direction: column;
+            padding: 6px;
+        }
+
+        .buttonc4 {
+            display: flex;
+            flex-direction: column;
+            padding: 6px;
+        }
+
+        .buttonc5 {
+            width: 115px;
+            height: 42px;
+            padding: 10px;
+            border-radius: 30px;
+            margin-top: 7px;
+            background-color: white;
+            border: none;
+            box-shadow: 0 0 10px #a5a5a5;
+            color: blue;
+            outline: none;
+        }
+
+        .buttonc5:active {
+            transform: scale(0.99);
+            color: red;
+        }
+
+        ::placeholder {
+            color: rgb(5, 5, 5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outcalc">
+        <div>
+            <input id="output" type="text" placeholder="0">
+        </div>
+        <div class="allbutton">
+            <div class="buttonc1">
+                <button onclick="clearData()"><b>Cl</b></button>
+                <button onclick="display('7')"><b>7</b></button>
+                <button onclick="display('4')"><b>4</b></button>
+                <button onclick="display('1')"><b>1</b></button>
+                <button onclick="display('.')"><b>.</b></button>
+            </div>
+            <div class="buttonc2">
+                <button onclick="del()"><b>DL</b></button>
+                <button onclick="display('8')"><b>8</b></button>
+                <button onclick="display('5')"><b>5</b></button>
+                <button onclick="display('2')"><b>2</b></button>
+                <button onclick="display('0')"><b>0</b></button>
+            </div>
+            <div>
+                <div class="rightside">
+                    <div class="buttonc3">
+                        <button onclick="display('%')"><b>%</b></button>
+                        <button onclick="display('9')"><b>9</b></button>
+                        <button onclick="display('6')"><b>6</b></button>
+                        <button onclick="display('3')"><b>3</b></button>
+                    </div>
+                    <div class="buttonc4">
+                        <button onclick="display('/')"><b>/</b></button>
+                        <button onclick="display('*')"><b>*</b></button>
+                        <button onclick="display('-')"><b>-</b></button>
+                        <button onclick="display('+')"><b>+</b></button>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="buttonc5" onclick="calculate()"><b>=</b></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    let a = document.getElementById("output");
+    function display(num) {
+        a.value += num;
+    }
+    function calculate() {
+        a.value = eval(a.value);
+    }
+    function clearData() {
+        a.value = "";
+    }
+    function del() {
+        a.value = a.value.slice(0, -1);
+    }
+</script>
+
+
+</html>
